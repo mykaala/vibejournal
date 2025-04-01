@@ -2,27 +2,52 @@
 
 *Your music, your memories — one season at a time.*
 
-VibeJournal is a personal Spotify companion that automatically generates playlists based on your top songs each season (or your chosen timeframe). It’s like your own Spotify Wrapped, but smarter, more frequent, and more personal — capturing your music, your mood, and your moments throughout the year.
+---
+
+## Overview
+
+VibeJournal is a personal Spotify companion that automatically generates playlists based on your top songs for a given timeframe. Whether it's every season, month, or quarter, it builds a music archive that reflects how you felt, what you loved, and who you were — all through your listening history.
 
 ---
 
-## 🌟 Features
+## Features
 
-- 🔁 **Timeframe-Based Playlist Generator**  
-  Automatically creates a playlist every **fortnight**, **month**, **season**, or **custom timeframe** using your most listened-to Spotify tracks.
+- 🔁 **Custom Timeframe Tracking**: Generate playlists seasonally, monthly, or on your own schedule
+- 🎧 **Spotify-Integrated Playback**: Uses your real listening data to build personalized playlists
+- ✨ **AI-Powered Titles & Descriptions**: OpenAI generates poetic playlist names and summaries based on your vibe
+- 📬 **Email Wrapped Summary**: Sends you a digest of your top artists, genres, mood, and “High Lyric of the Season”
+- 🧠 **Lyrics + GPT Analysis**: Extracts lyrics from your top songs and uses GPT to pick one line that captures the essence of your season
+- 📊 **Listening Insights**: Visualize how your taste evolves over time
+- 📁 **Personal Music Archive**: Saves and stores listening snapshots to build your musical diary
 
-- ✨ **Smart Titles & Descriptions**  
-  Uses the OpenAI API to generate poetic, fun, or vibe-based playlist names and blurbs.
+---
 
-- 📩 **"Mini Wrapped" Email Reports**  
-  At the end of each timeframe, you’ll receive an email with a **summary of your listening trends**, your curated playlist, and...
+## Usage Flow
 
-- 🎤 **Your "High Lyric" of the Season**  
-  We use a lyrics API + GPT to find a standout lyric from your top songs — the one that defines your vibe, energy, or mindset. Like a quote pulled from your soundtrack.
+1. **Connect Spotify**: Authenticate with your Spotify account
+2. **Choose Timeframe**: Set your season, month, or custom window
+3. **Generate Playlist**: VibeJournal fetches your top tracks and builds a playlist
+4. **AI Enhancements**: GPT adds a creative title, description, and picks a "high lyric"
+5. **Receive Email Summary**: A personal digest of your listening journey is sent to your inbox
+6. **Repeat**: Come back next season and watch your music story unfold
 
-- 📈 **Listening Insights**  
-  Visualize how your taste evolves — see your top artists, genres, and song moods over time.
+---
 
-- 📒 **Personal Music Archive**  
-  Keeps a private log of your top tracks every few weeks so you can build a long-term music memory bank.
+## Tech Stack
+
+### Frontend
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+
+### Backend
+- Node.js or Python
+- Spotify Web API
+- Genius API 
+- OpenAI API (or Gemini API)
+- Nodemailer / SendGrid (email delivery)
+- Cron jobs or GitHub Actions for scheduling
+- Firebase / PostgreSQL for data storage
+
 
